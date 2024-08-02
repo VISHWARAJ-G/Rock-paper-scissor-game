@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    background-color: #1E0342;
+    overflow: hidden;
+}
+.overlay{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100vh;
+    /* margin-top: -15px; */
+    padding-top: 250px; 
+}
+.inputContainer{
+    text-align: center;
+}
+#playerName{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #112D4E;
+    border: 1px solid #DBE2EF;
+    color: #DBE2EF;
+    margin: .5rem;
+}
+#playerName::placeholder{
+    color: #b3b3b4;
+}
+#submitting{
+    padding: 1rem;
+    background-color: #0F4C75;
+    border: 2px solid #DBE2EF;
+    color: #f1f6ff;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.game-name{
+    color: #DBE2EF;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+.Obox{
+    display: flex;
+    justify-content: space-around;
+}
+.player1-box,.player2-box{
+    width:45%;
+    background-color: #0E46A3;
+    height: 100%;
+    color: #DBE2EE;
+}
+.player{
+    font-size: 2rem;
+    text-align: center;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.button1:active{
+    opacity: .8;
+}
+.symbolName1,.symbolName2{
+    text-align: center;
+    display: block;
+}
+.pressedbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.winnerBox{
+    text-align: center;
+    color:#DBE2EE;
+    background-color: #17153B;
+    width: 100%;
+}
+.pics{
+    width:100%;
+    background:transparent;
+    object-fit:fill;
+    object-position: center;
+    height: 150px;
+    border-radius: 10px;
+}
+.img-box{
+    height: 150px;
+    width: 9rem;
+}
+.rock-button,.paper-button,.scissor-button{
+    padding: 1.5rem;
+    background-color: #112D4E;
+    border: 2px solid #DBE2EF;
+    color: #f1f6ff;
+    margin-top: .7rem;
+    margin-left: 10px;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media (max-width:700px){
+    .player1-box{
+        width: 95%;
+        height: 200%;
+    }
+    .player2-box{
+        display: none;
+    }
+    .scissor-OBox{
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .pressedbox{
+        display: none;
+    }
+}
+@media (min-width:701px) and (max-width:800px){
+    .scissor-OBox{
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .player1-box{
+        width: 70%;
+        height: 200%;
+    }
+    .player2-box{
+        display: none;
+    }
+    .pressedbox{
+        display: none;
+    }
+}
+@media (min-width:801px) and (max-width:1070px){
+    .scissor-OBox{
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
